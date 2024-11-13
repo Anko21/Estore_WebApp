@@ -6,7 +6,8 @@ eStore is a modern, responsive e-commerce web application built with **React** a
 
 ## 🍿 WATCH A VIDEO DEMONSTRATION🎬 
 [Watch Video Demonstration]
-(https://github.com/Anko21/Estore_WebApp/issues/1#issue-2656455783)
+[![Watch Video](docs/thumbnail-image.png)](https://github.com/Anko21/Estore_WebApp/issues/1#issue-2656455783)
+
 
 ## Features
 
