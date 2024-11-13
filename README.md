@@ -9,7 +9,6 @@ eStore is a modern, responsive e-commerce web application built with **React** a
 - **Category Browsing**: Users can explore products by selecting categories, with a dynamic sidebar that displays main categories and subcategories.
 - **Product Filtering**: The app offers a price range filter, enabling users to adjust the minimum and maximum price to view relevant products.
 - **Cart Management**: Users can add items to the shopping cart, with real-time updates to item quantity, cart total, and total items in the cart.
-- **User Authentication UI**: Basic login and registration links are included in the top navigation bar for user account management.
 
 ## Technologies Used
 
@@ -42,5 +41,3 @@ Backend Integration: Connect with an API for user authentication, product, and c
 Enhanced Authentication: Add a fully functional login and registration system with protected routes.
 Advanced Filtering: Include additional filters, such as brand, rating, and sorting options.
 
-
-npm install react-router-dom
