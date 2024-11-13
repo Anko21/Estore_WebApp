@@ -68,12 +68,14 @@
     list-style-type: none;
     display: inline-block;
     margin-right: 0.5em;
+    position: relative;
   }
 
   .cart-wishlist{
     width: 7%;
     margin-top: 1.7em;
     margin-left: 1em;
+    position: relative;
   }
 .list-icon{
 
@@ -83,8 +85,8 @@
     position: absolute;
     height: 1em;
     width: 1em;
-    left: 95%;
-    top: 1.8%;
+    left: 75%;
+    top: -15%;
     text-align: center;
     line-height: 90%;
 
