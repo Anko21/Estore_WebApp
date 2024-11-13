@@ -1,0 +1,116 @@
+.ec-main-div{
+    text-align: center;
+    margin:3em auto;
+
+    .ec-main-text{
+        font-size: 3em;
+        font-weight: 500;
+    }
+    .ec-btn{
+        font-weight: 500;
+        width: fit-content;
+    }
+}
+
+
+
+.fc-main-div{
+    display: flex;
+    // flex-flow:row wrap;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+
+    .cart-item-card{
+        display: flex;
+        // flex-flow:row wrap;
+        img{
+            height: 13em;
+            border-radius: 0.5em;
+        }
+        .cart-item-details{
+            text-align: left;
+
+            .cart-item-name{
+                font-size: 1.4em;
+            }
+            .cart-item-price{
+                float: right;
+                span{
+                    font-size: 1.5em;
+                }
+            }
+            span{
+                font-weight: 600;
+                font-size: large;
+            }
+            .cart-edit-container{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+
+                .btn-trash{
+                    width: fit-content;
+                    span{
+                        font-weight: 600;
+                        font-size: small;
+                    };
+                }
+            }
+        }
+    }
+
+    .cart-summary{
+        height: fit-content;
+        border-radius: 2em;
+        background-color: aliceblue;
+        text-align: start;
+
+        span{
+            display: block;
+            color: rgb(78, 78, 78);
+            margin: 1em 0;
+        }
+        h2{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .summary-total{
+            color: black;
+            font-weight: 550;
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .fc-main-div {
+        width:100vw;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    .cart-item-card {
+        width:100vw;
+        margin:0em;
+        padding:0em;
+
+        .cart-item-img {
+            margin:auto
+        }
+        .cart-item-details {
+            display:flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            text-align: center;
+        }
+    }
+
+    .cart-summary {
+        width:100vw;
+        padding:1em;
+        margin-top: 2em;
+        text-align: center;
+    }
+}
