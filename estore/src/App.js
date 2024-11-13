@@ -3,6 +3,7 @@ import TopNav from './Components/TopNav';
 import CatNav from './Components/CatNav';
 import LandingPage from './Components';
 import {Routes, Route} from "react-router-dom";
+import ProductDetails from './Components/ProductDetails';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <CatNav/>
       <Routes>
         <Route path ="/" Component = {LandingPage}/>
+        <Route path = "/productDetails" Component={ProductDetails}/>
       </Routes>
     </div>
   );
