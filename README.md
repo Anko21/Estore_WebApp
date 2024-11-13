@@ -5,7 +5,7 @@
 eStore is a modern, responsive e-commerce web application built with **React** and **Redux Toolkit**. This project provides a fully functional e-commerce front-end experience, allowing users to browse products, filter by category and price, and add items to their cart. The application is designed with a clean UI and organized structure, making it easy for users to navigate and interact with the online store.
 
 
-![estore_video](docs/estore_video.mp4)
+[estore_video](docs/estore_video.mp4)
 
 
 ## Features
