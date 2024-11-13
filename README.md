@@ -33,10 +33,10 @@ eStore is a modern, responsive e-commerce web application built with **React** a
 ## Installation and Setup
   - git clone https://github.com/Anko21/Estore_WebApp.git
   - cd eStore_WebApp
-    -For the Frontend
+    - For the Frontend
         - Install dependencies: npm install
         - Start the development server: npm start
-    -For the Backend
+    - For the Backend
         - Install dependencies: npm install
         - Start the development server: nodemon start
 
