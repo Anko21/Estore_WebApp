@@ -27,17 +27,17 @@ eStore is a modern, responsive e-commerce web application built with **React** a
   - `CatNav`: A category navigation bar showcasing main product categories.
 
 ## Installation and Setup
-   git clone https://github.com/yourusername/eStore_WebApp.git
-   cd eStore_WebApp
-Install dependencies:
-npm install
-Start the development server:
-
-npm start
-Open your browser and navigate to http://localhost:3000 to see the application in action.
+  - git clone https://github.com/Anko21/Estore_WebApp.git
+  - cd eStore_WebApp
+  - Install dependencies:
+      - npm install
+  - Start the development server:
+      - npm start
+- Open your browser and navigate to http://localhost:3000 to see the application in action.
 
 Future Improvements
-Backend Integration: Connect with an API for user authentication, product, and category data.
-Enhanced Authentication: Add a fully functional login and registration system with protected routes.
-Advanced Filtering: Include additional filters, such as brand, rating, and sorting options.
+Backend Integration: 
+- Connect with an API for user authentication, product, and category data.
+- Enhanced Authentication: Add a fully functional login and registration system with protected routes.
+- Advanced Filtering: Include additional filters, such as brand, rating, and sorting options.
 
