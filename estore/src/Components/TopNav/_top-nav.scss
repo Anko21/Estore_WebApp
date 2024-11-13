@@ -101,6 +101,7 @@ h5 {
   list-style-type: none;
   display: inline-block;
   margin-right: 0.5em;
+  position: relative;
 }
 
 .list-icon a {
@@ -113,7 +114,7 @@ h5 {
   position: absolute;
   height: 1em;
   width: 1em;
-  left: 65%;
+  left: 55%;
   top: -15%;
   text-align: center;
   line-height: 90%;
