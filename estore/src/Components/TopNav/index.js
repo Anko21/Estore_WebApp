@@ -9,7 +9,7 @@ const TopNav = ()=>{
     const cartItemCount = useSelector(state=>state.cr.totalItems);
 
     return(
-        <div>
+        <div className='topNavBar-container'>
             <div className='header bg-dark'>
                 <div className='row top-nav-row'>
                     <div className='brand my-1'>
@@ -27,7 +27,6 @@ const TopNav = ()=>{
                         </div>
                         <div className='searchBar'>
                             <input className='form-control' placeholder='Search...'/>
-
                             <button> <i className='fa fa-search'/> </button>
                         </div>
 

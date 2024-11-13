@@ -1,12 +1,25 @@
 import React from 'react'
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import './_cart.scss'
 import { Link } from 'react-router-dom';
+import { deleteCartItem, updateItemQuantity } from '../../Redux/Cart/cartSlice';
 
 const Cart = () => {
     const cart = useSelector(state=>state.cr);
+    const dispatch = useDispatch()
 
-    console.log("cartItemCount",cart)
+    const quantityHandler = (e, item, key)=>{
+        const payload = {
+            operator : e.target.innerText,
+            key,
+            item
+        }
+        dispatch(updateItemQuantity(payload))
+    }
+
+    const deleteHandler = (item) => {
+        dispatch(deleteCartItem(item))
+    }
   return (
     <div>
         {cart.cartItems.length === 0 ?
@@ -24,7 +37,7 @@ const Cart = () => {
             <div className="row my-5 fc-main-div">
                 <div className="col-8 p-4">
                     {
-                        cart.cartItems.map((item)=>{
+                        cart.cartItems.map((item, key)=>{
                             return(
                                 <div>
                                     <div className="row cart-item-card">
@@ -46,18 +59,19 @@ const Cart = () => {
                                                 </div>
                                                 <hr/>
                                                 <div className="cart-edit-container">
-                                                    <div className="btn-group mx-3">
+                                                    <div className="btn-group mx-3" onClick={(e)=>quantityHandler(e,item,key)}>
+                                                        {/* //event delegation bubbleing */}
                                                         <div className="btn btn-outline-dark">
                                                             <span> - </span>
                                                         </div>
                                                         <div className="btn">
-                                                            0
+                                                            {item.quantity}
                                                         </div>
                                                         <div className="btn btn-outline-dark">
                                                             <span> + </span>
                                                         </div>
                                                     </div>
-                                                    <div className="btn btn-outline-danger mx-4 btn-trash">
+                                                    <div className="btn btn-outline-danger mx-4 btn-trash" onClick={()=>deleteHandler(item)}>
                                                         <span> <i className="fa fa-trash mx-2"/> Remove Item </span>
                                                     </div>
                                                 </div>
